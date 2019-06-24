@@ -3,7 +3,7 @@
 const path = require('path')
 const childProcess = require('child_process')
 
-const proc = childProcess.spawn('/bin/sh', ['-c', 'curl -sSL http://releasename.com/api/random'])
+const proc = childProcess.spawn('/bin/sh', ['-c', 'curl -sSL http://165.227.17.126/api/random'])
 
 proc.stdout.setEncoding('utf8')
 proc.stdout.on('data', (data) => {
